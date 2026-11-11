@@ -1,0 +1,363 @@
+https://cryptoid.com.br/identidade-digital-destaques/analise-forense-em-memoria-ram/
+
+Valorizamos sua privacidade
+
+Utilizamos cookies para aprimorar sua experiência de navegação, exibir anúncios ou conteúdo personalizado e analisar nosso tráfego, conforme detalhado em nossa Política de Privacidade. Ao clicar em “Aceitar todos”, você concorda com nosso uso de cookies.
+
+Personalizar
+Rejeitar
+Aceitar tudo
+
+
+
+
+
+
+
+
+Login
+CryptoID
+Últimas notícias
+Quem somos
+Receba novidades
+Fale conosco
+LinkedIn
+Facebook
+Instagram
+X (Twitter)
+Pinterest
+YouTube
+Criptografia
+ID
+IA
+IAM
+IDTalk
+Opinião
+Cyber
+Biometria
+Varejo
+Assinatura Eletrônica
+Certificação Digital
+Mercado Financeiro
++
+
+Home»Cibersegurança»Análise Forense em Memória RAM
+
+Cibersegurança
+Destaques
+Notícias
+Análise Forense em Memória RAM
+24 de abril de 20179 Mins de leitura
+ 1.     Objetivo
+O objetivo deste artigo é demostrar como realizar uma imagem forense de memória RAM, apresentando alguns exemplos de informações que podem ser recuperadas e analisadas com finalidade de ajudar a identificar indícios de incidentes de segurança bem como fraudes e demais ilícitos praticados através de um sistema de informação.
+
+
+Eliézer Pereira
+Por Eliézer Pereira
+
+2.     Boas Práticas e Técnicas de Análise Forense Computacional
+
+2.1 NIST O National Institute of Standards and Technology (NIST) (em português: Instituto Nacional de Padrões e Tecnologia) é mundialmente conhecido como referência na publicação de documentos que trazem padrões de tecnologia de forma bem detalhada e bem abrangente.
+
+O Documento 800-86 – Guide to Integrating Forensic Techniques into Incident Response (em português: Guia para Integrar Técnicas Forense em Resposta à Incidentes) traz uma série de recomendações para proceder com uma análise forense para incidentes de segurança, desde a coleta de dados até a elaboração de um relatório final.
+
+2.1.1 Etapas recomendadas pelo NIST para Análise Forense Coletar – Identificar, rotular, e proceder com a aquisição de dados de diversas fontes, de forma documentada e garantindo a integridade dos dados. Examinar – Processar os dados coletados, que normalmente requer métodos manuais e formas automatizadas, tentando já identificar possíveis dados relevantes à investigação. Analisar – Dar continuidade ao processamento de uma forma mais cuidadosa e já tendo um direcionamento do que investigar. Nesta etapa demais coletas de outras fontes de dados podem trazer evidências adicionais.Reportar – Descrever o resultado da análise que deve incluir o relato de tudo que foi realizado desde a primeira etapa. Ações realizadas, bem como ferramentas e procedimento utilizados, analisar demais riscos e sugerir melhorias de controles internos, ferramentas, a fim de reduzir o impacto ao negócio detectando fragilidades que possam ocasionar em recorrência de um incidente, por exemplo.  
+
+2.2 RFC 3227 A RFC 3227, traz boas práticas para aquisição de evidencias digitais. A ordem em que estas são coletadas, pode determinar o sucesso ou o insucesso de uma investigação.
+Essa ordem é chamada de Ordem de Volatilidade, que como o próprio nome sugere, orienta que os dados voláteis devem ser coletados primeiro.
+Um dado volátil é qualquer dado que pode ser perdido com o desligamento do sistema, como por exemplo uma conexão com um site da internet que ainda esteja registrado memória RAM. Devemos priorizar a aquisição de evidências seguindo do mais volátil para o menos volátil:  *Caches *Tabelas de roteamento, tabelas de processos, memória *Arquivos temporários de sistema *Disco rígido *Logs remotos, dados de monitoramento *Configuração física de rede, topologia de rede *Arquivos de mídia (CDs, DVDs)
+
+3.     Análise Forense em Memória RAM 
+A Memória de acesso aleatório (do inglês Random Access Memory, normalmente abreviada para RAM) é um tipo de memória que permite a leitura e a escrita, utilizada em sistemas eletrônicos digitais. Ao executar um programa, ele é lido em um dispositivo de armazenamento, seja um disco rígido, um CD, etc, é transferido para a memória RAM, e então será executado pelo processador. O acesso à memória RAM é vantajoso pelo fato dela possuir taxas de transferência muito mais alta, em relação ao disco rígido por exemplo.A desvantagem fica por conta da perda dos dados armazenados quando o computador é desligado. Quando o computador é ligado, o processo de inicialização do sistema “boot”, é refeito tendo bibliotecas, drivers e configurações de preferência copiados novamente para a memória RAM. A memória RAM pode conter diversos tipos de arquivos desde programas executáveis, informações de portas de comunicação de rede, arquivos de registro do sistema operacional, registro de navegação em sites da internet, fotos, arquivos de texto, etc. Como citamos anteriormente, este conteúdo pode ser perdido com o desligamento da máquina, e numa Analise Forense Computacional, a já citada Ordem de Volatilidade deve ser seguida mandatoriamente, para garantir que evidências não sejam perdidas.
+
+3.1 Criando uma Imagem da Memória RAM O software utilizado para esta finalidade será a “DumpIT”, software gratuito encontrado no link abaixo: http://www.downloadcrew.com/article/23854-dumpit Recomendação:
+
+A imagem não deve ser gravada diretamente na máquina que terá a memória RAM analisada. O software “DumpIT” deve ser copiado e executado a partir de um dispositivo de armazenamento externo (ex: pen drive, hd externo).
+
+Execução: Executar o software “DumpIT” com privilégios de administrador:
+
+
+
+O Software “DumpIT” irá exibir conforme abaixo, o tamanho da memória “Address space size”, que no exemplo exibe uma memória RAM de 16GB, onde o resultado do arquivo de imagem gerado terá aproximadamente o mesmo tamanho.
+
+O Caminho onde o arquivo será salvo, é mostrado em “Destination” e corresponde ao caminho de onde o programa “DumpIT” está sendo executado.
+
+Por padrão o nome do arquivo será o nome da máquina (hostname) seguido da data de execução do processo de imagem. O arquivo é salvo por padrão em formato “raw”.
+
+
+
+Para iniciar o processo, basta pressionar a tecla “Y”.
+
+Será exibida a mensagem “Processing” que indica que a imagem forense da memória está sendo processada:
+
+
+
+Será exibida e mensagem “Success” que indicará se o processo foi concluído com sucesso.
+
+
+
+ 
+
+Volatiliy Framework
+Para mostrar alguns exemplos básicos de evidências que podem ser encontradas na memória RAM, precisaremos analisar o arquivos gerado. Para tal finalidade iremos utilizar o software Volatility Framework.
+
+O Volatility Framework é um coleção de ferramentas, de código livre e gratuita, para análise de memória RAM. Normalmente utilizada em ambientes Linux, e já presente em algumas distribuições, como o Kali Linux por exemplo.
+Iremos utilizar o Volatility em ambiente Windows,  não tendo impacto algum no resultado e nem nos comandos utilizados.
+
+Download: http://www.volatilityfoundation.org/25
+
+Dica: Após o download, renomeie o executável para apenas Volatility.exe, para tornar ainda mais simples a execução dos comandos.
+
+ 
+
+4.1 Plug-ins
+
+Os plug-ins são módulos que irão executar uma função específica no arquivo de imagem gerado, como o foco é apenas demonstrar alguns plug-ins, sugiro que leia sobre os demais (e são vários!) no site acima citado.
+
+4.2 Extraindo Informações
+
+Imageinfo – Traz informações do Sistema operacional
+
+Este plug-in trará a informação essencial para análise, pois identificará o perfil que será utilizado por todos os outros plug-ins.
+
+Os comandos a seguir devem ser executados diretamente do prompt de comando do Windows ( executar > CMD)
+
+Comando utilizado:
+
+volatility –f 20160915-125011.raw imageinfo
+
+ 
+
+
+
+ 
+
+Na linha “Suggested Profile”, utilizamos sempre a primeira sugestão é exibido que o sistema operacional é Win7SP0x86 (Windows 7, sem service pack instalado, na versão de 32 bits).
+
+De posso da informação do perfil, agora podemos utilizar demais plug-ins.
+
+ 
+
+Pslist – Lista processos em execução
+Comando:
+
+volatility –f 20160915-125011.raw –profile=Win7SP0x86 pslist > pslist.txt
+
+ 
+
+-f “nome do arquivo”
+
+“–profile=Win7SP0x86” – Instrui para utilizar o perfil de Sistema operacional anteriormente detectado.
+
+pslist – Plug-in a ser executado
+
+pslist.txt – Instrução para ser criado um arquivo de texto com o mesmo nome do plug-in, isso possibilita uma melhor visualização, além de gravar a saída para uma análise posterior
+
+
+
+ 
+
+Podemos notar todos os processos que estavam em execução no momento da realização da imagem forense da memória RAM, inclusive o próprio software utilizado para tal, em destaque.
+
+ 
+
+Dlllist – Exibe lista das dlls carregadas para cada processo
+Comando:
+
+volatility –f 20160915-125011.raw –profile=Win7SP0x86 dlllist> dlllist.txt
+
+ 
+
+-f “nome do arquivo”
+
+“–profile=Win7SP0x86” – Instrui para utilizar o perfil de Sistema operacional anteriormente detectado.
+
+dlllist – Plug-in a ser executado
+
+dlllist.txt – Instrução para ser criado um arquivo de texto com o mesmo nome do plug-in
+
+ 
+
+
+
+ 
+
+Este comando gerou um arquivo grande, listando os executáveis e suas respectivas DLLs, de forma bem detalhada, exibindo inclusive o caminho de cada uma destas DLLs.
+Seria útil por exemplo, para identificar arquivos maliciosos sendo carregados juntamente com programas já conhecidos do sistema operacional.
+
+Netscan – Exibe conexões de rede
+Comando:
+
+volatility –f 20160915-125011.raw –profile=Win7SP0x86 netsca> netscan.txt
+
+ 
+
+-f “nome do arquivo”
+
+“–profile=Win7SP0x86” – Instrui para utilizar o perfil de Sistema operacional anteriormente detectado.
+
+netscan – Plug-in a ser executado
+
+>netscan.txt – Instrução para ser criado um arquivo de texto com o mesmo nome do plug-in
+
+Este talvez seja um dos plug-ins mais úteis utilizados pelo Volatility.
+
+Ele traz informações muito importantes bem como protocolos, portas, IPs, e executáveis envolvidos na comunicação de rede da máquina em questão.  Com essas informações poderíamos identificar possíveis conexões para endereços IPs suspeitos, o que ocorre em máquinas infectadas por malwares, por exemplo.
+
+ 
+
+Dumpregistry – Extrai arquivos de registro
+
+Comando:
+
+volatility –f 20160915-125011.raw –profile=Win7SP0x86  dumpregistry –dump c:\registry-dump
+
+-f “nome do arquivo”
+
+“–profile=Win7SP0x86” – Instrui para utilizar o perfil de Sistema operacional anteriormente detectado.
+
+dumpregistry –dump– Plug-in a ser executado + caminho do diretório onde serão extraídos os arquivos de registro
+Serão extraídos a partir da imagem diversos arquivos de registro do Windows, mas trabalharemos com os 4 principais, descritos abaixo:
+
+Os arquivos de registro “SYSTEM, SOFTWARE, SAM, NTUSER, contém uma série de informações a respeito de informações de instalação do sistema operacional, softwares instalados, informações de credenciais, informações a nível de usuário como últimos arquivos abertos, informações de rede, etc.
+
+Altere o nome dos arquivos para este padrão abaixo:
+
+SYSTEM.REG
+
+SOFTWARE.REG
+
+SAM.REG
+
+NTUSER.DAT
+
+ 
+
+Analisando Arquivos de Registro
+Podemos utilizar a ferramenta Registy Report para criar um relatório geral com todas as informações encontradas nestes arquivos.
+
+Download: http://www.gaijin.at/dlregreport.php
+
+
+
+ 
+
+
+
+ 
+
+
+
+Clicar em “File”, selecionar a opção “Import from folder”, apontar para a pasta com os arquivos anteriormente extraídos e clicar “OK”.  Em seguida novamente em “file” selecionar a opção “Create Report”
+
+Salve o relatório:  O relatório gerado trará informações dos arquivos de registro de forma organizada.  
+
+
+
+5.     Conclusão
+A ideia foi apenas mostrar de uma maneira simples, como evidências importantes podem ser extraídas através da análise da memória RAM. As boas práticas para aquisição de evidências, nos mostrou como as etapas devem ser seguidas sistematicamente, de forma que um procedimento executado de forma errada, pode ocasionar na perda de evidências importantes para solucionar uma investigação.
+
+6.     Referências:
+Melo, Sandro. Computação Forense e Software Livre: Alta Books, 2009. ISBN, 8576082888, 9788576082880.
+
+Morimoto, Carlos Eduardo. Hardware II, o guia definitivo / Carlos Eduardo Morimoto. –. Porto Alegre: Sul Editores, 2010. 1086 p. ISBN 978-85-99593-16-5. 1.
+
+NIST SP 800-86 – Guide to Integrating Forensic Techniques into Incident Response
+
+http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-86.pdf
+
+RFC 3227 – Guidelines for Evidence Collection and Archiving http://www.rfc-base.org/rfc-3227.html
+
+ 
+
+* Eliézer Pereira
+
+Especialista em Segurança da Informação e Forense Computacional UnitedHealth Group
+
+Instituto Brasileiro de Tecnologia Avançada – IBTA
+
+Compartilhe:
+FacebookTwitterWhatsAppLinkedIn
+AET EUROPE
+Bry
+CERTIFICA
+CERMOB
+DINAMO Cyber Security Company
+HID
+INNOVATRICS
+Machado Meyer Advogados
+NetAdmin
+Opice Blum Advogados
+QUALITYCERT
+SOLUTI
+Synolo Biometrics
+Syngular ID
+Thales DIS CPL
+Thales
+V/CERT
+ZapSign
+Colunistas
+ÚLTIMAS NOTÍCIAS
+Criptoativos
+Volume negociado em USDT no Inter cresce mais de 360%
+9 de novembro de 2026
+ANPD tem 16 frentes regulatórias em andamento, incluindo biometria e IA
+9 de novembro de 2026
+Autonomia de agentes de IA avança mais rápido que os controles de segurança nas empresas
+9 de novembro de 2026
+Quais são as diferenças entre liveness ativo e passivo?
+9 de novembro de 2026
+Credencial comprometida na Marathon Health pode ter exposto dados de 5,7 milhões nos EUA
+9 de novembro de 2026
+Cloudflare avança na identidade de agentes de IA e propõe novas regras de confiança na internet
+9 de novembro de 2026
+Let’s Encrypt recebe mais de € 1 milhão para desenvolver certificados TLS pós-quânticos
+9 de novembro de 2026
+Ministério da Gestão orienta usuários sobre recuperação da conta GOV.BR em minutos
+9 de novembro de 2026
+Leia Mais
+
+Receba novidades
+Cadastre-se em nossa newsletter e fique ligado em tudo que acontece no Crypto ID.
+
+Nome*:
+
+E-mail*:
+
+Área de atuação*
+
+
+—Escolha uma opção—
+
+Nível de experiência*
+
+
+—Escolha uma opção—
+
+
+
+Eventos
+
+novembro, 2026
+
+
+
+
+Nenhum evento
+
+
+
+
+
+Apoio Institucional
+
+     
+Produzido por: Insania
+© 2014  CryptoID. Todos os direitos reservados.
+
+LinkedIn
+Facebook
+Instagram
+X (Twitter)
+Pinterest
+YouTube

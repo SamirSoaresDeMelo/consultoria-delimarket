@@ -1,0 +1,518 @@
+Pular para o conteúdo principal
+Acessibilidade
+
+Contraste
+Aumentar zoom
+A+
+Diminuir zoom
+A-
+Denuncie
+Transparência e prestação de contas
+Ícone de Acesso à informação
+PT
+Entrar
+
+Sobre o TCU
+
+Nosso trabalho
+
+Sessões e jurisprudência
+
+Fale conosco
+Pesquisa integrada
+Início
+Tecnologia da Informação
+Fiscalização de Segurança da Informação e Cibersegurança
+Fiscalização de Segurança da Informação e Cibersegurança
+Atuação do TCU em SegInfo
+Propósito
+"Tornar seguro o ambiente digital sob a governabilidade do Brasil."
+
+O TCU trabalha para garantir a segurança no mundo digital e proteger as informações importantes do Brasil, além da proteção pessoal dos nossos cidadãos.
+
+Por meio de ações modernas e estratégias inovadoras, identifica problemas, avalia riscos e sugere melhorias para tornar os sistemas e dados do país mais seguros — fortalecendo a proteção digital e criando um ambiente tecnológico mais confiável para todos os brasileiros.
+
+Essa atuação ocorre por meio da avaliação de riscos, controles e políticas de segurança digital e cibersegurança na Administração Pública Federal.
+
+Além das fiscalizações, o TCU compartilha instrumentos, metodologias e capacitações que podem ser reutilizados por gestores públicos e órgãos de controle.
+
+Contato: audti@tcu.gov.br
+
+Para a Sociedade
+Portal GOV.BR: Identificação e autenticação seguras
+O Login GOV.BR é a porta de entrada dos cidadãos para os serviços públicos digitais. O TCU avaliou se o processo de identificação e autenticação dos usuários que está sendo utilizado está de acordo com as melhores práticas, reduzindo o risco de fraudes e acessos indevidos às contas dos cidadãos.
+
+Ver mais sobre o tema →
+
+
+Fraudes de personificação governamental (Alerta Cidadão)
+Aplicativos falsos, perfis e mensagens que se passam por órgãos do governo para enganar cidadãos. O TCU fiscaliza como a Administração Pública Federal gerencia esse risco de comunicação com o cidadão.
+
+Ver mais sobre o tema →
+
+
+Ausência de Governança Nacional para Cibersegurança
+O TCU avalia se a política que orienta a proteção cibernética do país está alinhada às boas práticas de governança pública, um dos temas que compõem a Lista de Alto Risco da administração federal.
+
+Ver mais sobre o tema →
+
+
+Nível de Risco nas Organizações do Sisp
+O TCU avalia se os controles de cibersegurança das organizações que compõem o Sistema de Administração dos Recursos de Tecnologia da Informação do governo federal seguem boas práticas — outro tema que integra a Lista de Alto Risco.
+
+Ver mais sobre o tema →
+
+Para Gestores e Auditores
+Qual tema tem interesse?
+Web, e-mail e DNS
+Phishing
+Identidades e autenticação
+Active Directory (AD)
+Gestão de incidentes
+Backup
+Vulnerabilidades
+Golpes contra cidadãos
+Cadeia de Suprimentos de TI
+Inteligência Artificial
+Temas abordados
+Cada tema reúne, em um só lugar, os links para todo material relacionado nas demais seções da página.
+
+
+1. Web, e-mail e DNS
+Configurações de segurança dos serviços de hospedagem web, e-mail e resolução de nomes.
+
+Guia Matriz de riscos e controles — web, e-mail e DNS
+
+PROTEGE-TI Online PTO-01 — WEB, DNS e EMAIL: os seus estão de portas abertas?
+
+Fiscalização Configurações em serviços web, e-mail e DNS
+
+
+2. Phishing
+Conscientização e controles administrativos e técnicos contra ataques de phishing.
+
+Instrumentos Defesas contra phishing (4 QACIs)
+
+PROTEGE-TI Online PTO-02 — Phishing: seus usuários conhecem os "anzóis"?
+
+Fiscalização Vetor de ataque phishing
+
+
+3. Identidades e autenticação
+Governança, autenticação e monitoramento de identidades — inclusive autenticação de cidadãos no GOV.BR.
+
+Instrumentos Gestão de identidades (4 QACIs)
+
+PROTEGE-TI Online PTO 08 — GIA: cuide bem da porta de entrada
+
+Fiscalização Gestão de identidades e de autenticação — Siafi
+
+Fiscalização Identificação e autenticação segura no Portal GOV.BR
+
+
+4. Active Directory (AD)
+Proteção, configuração e monitoramento dos Serviços de Domínio do Active Directory.
+
+Instrumentos Gestão do Active Directory (6 itens)
+
+Guia Matriz de riscos e controles para Active Directory (planejado)
+
+PROTEGE-TI Online PTO-05 — AD: por onde o Ransomware acontece
+
+PROTEGE-TI Online PTO 10 — AD: guia de riscos e controles
+
+Fiscalização Active Directory
+
+
+5. Gestão de incidentes
+Preparação, detecção, tratamento e análise pós-incidentes de segurança da informação.
+
+Instrumentos Gestão de incidentes (7 QACIs)
+
+PROTEGE-TI Online PTO-04 — Gestão de Incidentes: prepare-se para qualquer cenário
+
+Fiscalização Gestão de incidentes
+
+
+6. Backup
+Política, testes de restauração e segurança física e lógica das cópias de segurança.
+
+Instrumentos Gestão de cópias de segurança (6 QACIs)
+
+PROTEGE-TI Online PTO-06 — Backup: sua última linha de defesa
+
+Fiscalização Gestão de cópias de segurança (backup)
+
+
+7. Vulnerabilidades
+Descoberta, priorização e gerenciamento de atualizações de infraestrutura e aplicação.
+
+Instrumentos Gestão de vulnerabilidades (5 QACIs)
+
+PROTEGE-TI Online PTO 07 — Vulnerabilidades: cuide das suas
+
+Fiscalização Gestão de vulnerabilidades
+
+
+8. Golpes contra cidadãos
+Fraudes digitais de personificação governamental em e-mail, WhatsApp, redes sociais e aplicativos falsos.
+
+PROTEGE-TI Online PTO 09 — Alerta cidadão: você faz parte da solução
+
+Fiscalização Alerta Cidadão
+
+
+9. Cadeia de Suprimentos de TI (em execução)
+Fiscalizações em andamento.
+
+
+10. Inteligência Artificial
+Fiscalizações em andamento.
+
+Instrumentos de avaliação
+QACIs e roteiros técnicos de autoavaliação, organizados por tema.
+
+
+Defesas contra phishing
+QACI 01 — Controles do programa de conscientização do usuário
+
+QACI 02 — Ações de conscientização do usuário em phishing
+
+QACI 03 — Controles do eixo administrativo
+
+QACI 04 — Controles do eixo técnico
+
+
+Gestão de identidades
+QACI 01 — Governança em IdM
+
+QACI 02 — Gestão de Identidade
+
+QACI 03 — Autenticação
+
+QACI 04 — Monitoramento
+
+
+Gestão do Active Directory (AD)
+PT06 — Roteiro de execução da ferramenta Purple Knight
+
+PT07 — Roteiro para execução de scripts
+
+QACI 01 — Abordagem de proteção do AD
+
+QACI 02 — Configuração do AD
+
+QACI 03 — Monitoramento do AD
+
+QACI 04 — Contingência e recuperação do AD
+
+
+Gestão de incidentes
+QACI 01 — Preparação de gerenciamento de Incidentes
+
+QACI 02 — Recursos e ferramentas disponíveis para gestão de incidentes
+
+QACI 03 — Processo de relato de incidentes
+
+QACI 04 — Detecção e análise de incidentes
+
+QACI 05 — Tratamento de incidentes
+
+QACI 06 — Análises pós-incidentes
+
+QACI 07 — Exercícios de resposta a incidentes
+
+
+Gestão de cópias de segurança (backups)
+QACI 01 — Avaliação da política de backup
+
+QACI 02 — Planos e procedimentos
+
+QACI 03 — Testes de restauração
+
+QACI 04 — Segurança física
+
+QACI 05 — Segurança lógica
+
+QACI 06 — Recursos disponíveis
+
+
+Gestão de vulnerabilidades
+QACI 01 — Gestão de capacidade
+
+QACI 02 — Descoberta e priorização
+
+QACI 03 — Gerenciamento de atualizações (infraestrutura)
+
+QACI 04 — Gerenciamento de atualizações (aplicação)
+
+QACI 05 — Melhoria contínua
+
+Guias
+Matrizes de riscos e controles recomendados, servindo de referência para gestores e auditores.
+
+
+Matriz de riscos e controles para serviços de hospedagem web, e-mail e DNS
+[Em Breve] Matriz de riscos e controles para Active Directory
+Lançamento previsto em 12/11/2026
+
+PROTEGE-TI Online
+O PROTEGE-TI Online (PTO) é um programa de workshops criado pelo TCU para compartilhar o conhecimento e as iniciativas da instituição em segurança da informação. Por meio de controles técnicos práticos, o PTO capacita gestores públicos a otimizar a gestão de riscos e fortalecer a segurança de suas organizações.
+
+Ver playlist completa no YouTube
+
+PTO 10 — AD: guia de riscos e controles
+Previsto para 25/06/26
+
+PTO 09 — Alerta cidadão: você faz parte da solução
+Previsto para 24/09/26
+
+
+PTO 08 — GIA: cuide bem da porta de entrada
+12/11/26.
+Assistir ao vídeo
+Baixar apresentação
+
+
+PTO 07 — Vulnerabilidades: cuide das suas
+Realizado em 06/08/26.
+
+Assistir ao vídeo
+Baixar apresentação
+
+
+PTO-06 — Backup: sua última linha de defesa
+Assistir ao vídeo
+Baixar apresentação
+
+
+PTO-05 — Active Directory: por onde o Ransomware acontece
+Assistir ao vídeo
+Baixar apresentação
+
+
+PTO-04 — Gestão de Incidentes: prepare-se para qualquer cenário
+Assistir ao vídeo
+Baixar apresentação
+
+
+PTO-03 — Contratações de SI: o que você não pode negligenciar
+Assistir ao vídeo
+Baixar apresentação
+
+
+PTO-02 — Phishing: seus usuários conhecem os 'anzóis'?
+Assistir ao vídeo
+Baixar apresentação
+Notícia: Workshop ensina gestão de riscos contra ataques cibernéticos
+Ficha-síntese de auditoria
+
+
+PTO-01 — WEB, DNS e EMAIL: os seus estão de portas abertas?
+Assistir ao vídeo
+Baixar apresentação
+Notícia: Treinamento do TCU aborda segurança digital no setor público
+Matriz de riscos e controles para serviços de hospedagem web, e-mail e DNS
+
+Segurança da informação na Lista de Alto Risco do TCU (LAR)
+O tema Segurança da informação e segurança cibernética fazem parte da Lista de Alto Risco (LAR), que é uma ferramenta estratégica que consolida a avaliação do TCU sobre 29 áreas críticas da administração pública, que apresentam riscos significativos, capazes de comprometer a qualidade dos serviços prestados ao cidadão e a efetividade das políticas públicas.
+
+2026
+Processos associados
+TC 004.306/2025-2 — Monitoramento (PNCiber)
+TC 005.618/2025-8 — Monitoramento (Sisp)
+
+
+2024
+"A soberania, a confiança e a aceleração digital no Brasil podem ser impactadas pela falta de priorização do tema segurança cibernética, ..."
+
+Ver a LAR 2024
+
+Processos associados
+TC 010.387/2024-2 — Política Nacional de Cibersegurança (PNCiber)
+TC 010.390/2024-3 — Controles críticos nas organizações do Sisp
+
+
+Fiscalizações
+Configurações em serviços web, e-mail e DNS
+Objetivo: Promover a melhoria na gestão de riscos de segurança da informação no contexto dos serviços de hospedagem web, e-mail e resolução de nomes em organizações públicas federais, estaduais e municipais.
+
+TC 017.413/2023-0 — Acórdão 523/2024-TCU-Plenário (Relator Min. Aroldo Cedraz)
+
+Ficha-síntese de auditoria
+
+
+Vetor de ataque phishing
+Objetivo: Promover a melhoria da gestão de riscos no contexto do vetor de ataque phishing, por meio da avaliação dos controles administrativos, técnicos e de conscientização existentes nas organizações fiscalizadas em relação às boas práticas.
+
+TC 019.227/2023-0 sigiloso — Acórdão 2.079/2024-TCU-Plenário (Relator Min. Aroldo Cedraz)
+
+TC 019.228/2023-6 sigiloso — Acórdão 2.080/2024-TCU-Plenário (Relator Min. Aroldo Cedraz)
+
+TC 019.229/2023-2 sigiloso — Acórdão 2.081/2024-TCU-Plenário (Relator Min. Aroldo Cedraz)
+
+
+Active Directory
+Objetivo: Promover a melhoria na gestão de riscos de segurança da informação dos órgãos auditados no contexto dos Serviços de Domínio do Active Directory (AD-DS) da Microsoft, por meio da avaliação dos controles administrativos e técnicos existentes nas organizações fiscalizadas em relação às boas práticas.
+
+TC 039.230/2023-6 sigiloso — Acórdão 750/2025-TCU-Plenário (Relator Min. Aroldo Cedraz)
+
+TC 039.231/2023-2 sigiloso — Acórdão 751/2025-TCU-Plenário (Relator Min. Aroldo Cedraz)
+
+TC 039.233/2023-5 sigiloso — Acórdão 752/2025-TCU-Plenário (Relator Min. Aroldo Cedraz)
+
+
+Gestão de incidentes
+Objetivo: Promover melhorias no processo de Gestão de Incidentes de Segurança da Informação por meio da avaliação dos controles administrativos e técnicos existentes nas organizações fiscalizadas em relação às boas práticas.
+
+TC 039.955/2023-0 sigiloso — Acórdão 509/2025-TCU-Plenário (Relator Min. Aroldo Cedraz)
+
+TC 039.956/2023-7 sigiloso — Acórdão 510/2025-TCU-Plenário (Relator Min. Aroldo Cedraz)
+
+
+Gestão de cópias de segurança (backup)
+Objetivo: Promover melhorias no processo de Gestão de Cópias de Segurança (Backup) por meio da avaliação dos controles administrativos e técnicos existentes nas organizações fiscalizadas em relação às boas práticas.
+
+TC 040.034/2023-2 sigiloso — Acórdão 639/2025-TCU-Plenário (Relator Min. Aroldo Cedraz)
+
+TC 040.039/2023-4 sigiloso — Acórdão 537/2025-TCU-Plenário (Relator Min. Aroldo Cedraz)
+
+
+Política Nacional de Cibersegurança
+Objetivo: Avaliar em que medida a Política Nacional de Cibersegurança está de acordo com as boas práticas, em especial comparada ao previsto no Referencial de Controle de Políticas Públicas do TCU.
+
+TC 010.387/2024-2
+
+— Acórdão 2430/2024 - Plenário (Relator Min. Benjamin Zymler)
+
+— Acórdão 276/2025 - Plenário (Relator Min. Benjamin Zymler)
+
+Fiscalização que aborda tema da LAR 2024.
+
+
+Controles críticos nas organizações do Sisp
+Objetivo: Avaliar em que medida os controles de cibersegurança e de segurança da informação implementados pelas organizações do Sistema de Administração dos Recursos de Tecnologia da Informação (Sisp) estão de acordo com as boas práticas, em especial comparada ao previsto no Framework de Privacidade e Segurança da Informação – PPSI (Portaria-SGD/MGI 852/2023).
+
+TC 010.390/2024-3
+
+— Acórdão 2387/2024-TCU-Plenário (Relator Min. Augusto Nardes)
+
+— Acórdão 630/2025-TCU-Plenário (Relator Min. Augusto Nardes)
+
+Fiscalização que aborda tema da LAR 2024.
+
+
+Gestão de identidades e de autenticação — Siafi
+Objetivo: Promover a melhoria nos processos de gestão de identidades do Siafi, por meio da avaliação de controles técnicos e administrativos existentes em relação às boas práticas.
+
+TC 024.560/2024-3 sigiloso — Acórdão 2736/2025-TCU-Plenário (Relator Min. Bruno Dantas)
+
+Ficha-síntese de auditoria
+
+
+Gestão de vulnerabilidades
+Objetivo: Promover a melhoria da gestão de riscos no processo de Gestão de Vulnerabilidades da organização auditada, por meio da avaliação dos controles administrativos e técnicos existentes em relação às boas práticas.
+
+TC 024.149/2024-1 sigiloso
+
+TC 024.134/2024-4 sigiloso
+
+
+Identificação e autenticação segura de usuários no Portal GOV.BR
+Objetivo: Promover a melhoria nos processos de gestão de identidades, autenticação e autorização dos cidadãos no Portal Gov.Br, por meio da avaliação dos controles administrativos e técnicos existentes em relação às boas práticas sobre o assunto.
+
+TC 015.635/2025-2 — Acórdão 2019/2026-TCU-Plenário
+
+Relatório da equipe de auditoria
+
+
+Alerta Cidadão
+Objetivo: Promover a melhoria do processo de gestão de riscos da comunicação por meios digitais das organizações da Administração Pública Federal (APF) com os usuários dos seus serviços (cidadãos), ou seja, induzir a melhoria do gerenciamento de riscos de fraudes digitais de personificação governamental direcionadas aos cidadãos em canais como e-mail, WhatsApp, redes sociais, aplicativos falsos e outros.
+
+TC 012.850/2025-0 — Acórdão 1535/2026-TCU-Plenário
+
+Relatório da equipe de auditoria
+
+Apêndice X (mencionado no item 9.3 do Acórdão 1535/2026-TCU-Plenário)
+
+
+Política Nacional de Cibersegurança (PNCiber) — Monitoramento
+TC 004.306/2025-2 - em andamento
+(monitoramento do TC 010.387/2024-2, na LAR 2024)
+
+
+Controles críticos nas organizações do Sisp — Monitoramento
+TC 005.618/2025-8 - em andamento
+(monitoramento do TC 010.390/2024-3, na LAR 2024)
+
+
+Outros eventos
+"Dados digitais dos 3 Poderes estão expostos a ataques de hackers, aponta TCU"
+Em 21/06/2023, na TV Senado (Programa Cidadania)
+
+Assistir no YouTube
+Ler a notícia
+
+
+Audiência Pública 01/2023 sobre a Política Nacional de Cibersegurança (PNCiber)
+Em 15/06/2023, Brasília, DF
+
+Assistir
+
+Relacionado à fiscalização Política Nacional de Cibersegurança.
+
+
+Audiência na Comissão de Serviços de Infraestrutura do Senado Federal
+Em 18/05/2023, na Comissão de Serviços de Infraestrutura do Senado Federal
+
+Assistir
+
+Veja todas as informações da reunião
+
+Nesta página
+
+Atuação do TCU em SegInfo
+Para a Sociedade
+Para Gestores e Auditores
+Temas abordados
+Instrumentos de avaliação
+Guias
+PROTEGE-TI Online
+Segurança da informação na Lista de Alto Risco do TCU (LAR)
+Fiscalizações
+Outros eventos
+Voltar ao topo
+
+Voltar ao topo
+
+Olá, sou o Zello.
+Como posso ajudar?
+Ilustração de um robô com cabelo castanho escuro cacheado e cavanhaque usando traje social
+Endereço e Telefone
+Setor de Administração Federal Sul SAFS - Quadra 4, Lote 1 - Brasília - DF
+
+0800-644-2300 | Opção 1: Ouvidoria | Opção 2: Informações processuais
+
+(61) 3527-7222 - TCU Sede
+
+TCU nos estados
+Sobre o Portal
+Aposentados e Pensionistas
+Acessibilidade
+Acesso à informação
+Lei Geral de Proteção de dados - LGPD
+Mapa do site
+Termos de uso
+Acesso
+Página dos Aposentados
+Página dos Pensionistas
+Horários de atendimento e contatos
+TCU Digital (acesso interno)
+Assinatura de Conteúdo
+Receba conteúdo sobre pautas, notícias, jurisprudência, processos e outros.
+
+
+Receba atualizações
+Missão: "Aprimorar a Administração Pública em benefício da sociedade por meio do controle externo."
+O Portal do TCU utiliza cookies para auxiliar na sua navegação. Para maiores informações, acesse a nossa política de privacidade.
+Aceito

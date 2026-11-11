@@ -1,0 +1,176 @@
+Joao Vinicius Gonzaga Ruas
+Essa parte acabou que a gente teve que pesquisar que a gente não conhecia igual esse algoritmo falar a verdade, eu nem não sei como funciona muito certo. Não sei se tem uma chave e um alguma série de que alguma coisa assim alguma. alguma coisa para criptografar aí não sei se essa parte agora você sabe informar ou vão ter que olhar depois mas a política é mais ou menos essa de fazer o backup total no final de semana e faz um exemplementais e seguir esses logs mesmo para se resolver alguma perda recuperar.
+Emanuel Victor
+Eu entendi é que realmente precisa de ter mais estudo para começar a falar disso mesmo. Eu não acho que tá ruim não, mas só para esclarecer um pouco mais quando a gente fala de política de backup, né? Eu entendo que pelo que vocês têm acesso de conteúdo até o momento. Vocês fizeram muito bem, mas a política de backup ela envolve mais do que apenas definir a backup incremental dia tal dia tal dia tal. criptografado ou não isso envolve várias coisas por exemplo.
+Qual o setor que vai trabalhar com esse backup? Quem tem autorização de mexer com isso quem vai testar os backups onde esses backups vão ficar armazenados porque idealmente a gente não armazena o backup no mesmo local que a gente está armazenando os dados que já estão sendo usados ali consumidos e gerados a gente tem um deles, né Realmente. Na verdade seria ali no servidor vai ter. Do Servidor paralelo para caso um caia o outro root e também pode ser usado para Balancear a carga Ali vai ter um backup vai ter um back.
+local para caso alguma coisa aconteça ao local em si é importante ter um backup em nuvem e igual aquele aqueles fatores que você falou lá sobre quanto tempo leva para recuperar e tudo mais quanto mais. Quanto mais distante o backup tá de você, a gente pode ter esse raciocínio de que mais tempo vai levar para restaurar porque eu não vou gravar alguns gigas 10 GB de backup e guardar em outra filial da empresa para quando der um erro aqui localmente eu vou ter que ir lá buscar eu vou guardar um backup bem completo daqueles que demora muito tempo para restaurar então a gente define aí esse tipo de backup, ele demora muito para restaurar ele envolve esse tipo de dado ele vai ficar guardado no local tal vai ser responsável por tal setor é questão de criptografia.
+A gente também tem que preocupar porque se eu criptografo um backup, eu vou ter que descriptografar ele para restaurar ou para fazer teste teste de restauração, quando eu tô falando isso, né? E isso leva tempo, então isso aumenta muito e quando você criptografa normalmente a mensagem fica maior ainda
+Samir Soares
+Hi, I'm transcribing this call with my Tactiq AI Extension. https://tactiq.io/r/transcribing
+Emanuel Victor
+e se a mensagem fica maior do que ele já Originalmente era e um backup por padrão. Ele já é grande, a gente tem que entender que ele vai ocupar muito mais espaço. Então a gente vai precisar de muito mais armazenamento, né? Só completando mesmo para vocês. Pelo menos tem alguma noção? Não tô falando que vocês fizeram nada de errado. Não muito bem. Pode continuar.
+Joao Vinicius Gonzaga Ruas
+Deixa eu ver essa parte do backup. É isso isso aqui a gente tem que olhar um pouco melhor depois. Pelo menos eu também que não. Tô muito podendo essa parte do backup que foi que o professor falou de ter três cópia é três cópias duas fontes e uma em um local diferente. É uma política é uma estratégia que ele falou. É que tem um exemplo que Ó imagina quinta-feira o banco parou de funcionar esse horário. O Último backup incremental foi às duas horas da madrugada com tudo durante o dia o posticlei continuou gerando logo de transação aí a recuperação já estava completamente domingo aplica os backups incrementais segundo até quinta as duas horas da manhã, recupera os loucos e ao preservados após esse horários produzir os registros mediante imediatamente anterior corrupção. Vale da integridade do banco funcionamento, RP. Então pelo menos para mim isso aqui parece muito bom, mas eu não sei igual está totalmente certo igual essa estratégia parece boa, mas aí não sei se tem alguma coisa algum porém.
+E a parte de criptografia.
+Emanuel Victor
+Qualquer coisa que faltar a gente vai completando mais não precisa ser imediatamente assim, eu só tô tipo complementar informações da forma que
+Joao Vinicius Gonzaga Ruas
+Deixa eu ver é porque eu não sei se tem Caso não for eu mando via e-mail.
+Emanuel Victor
+vocês forem apresentando para pelo menos vocês saírem com esse pensamento. Pode falar isso.
+Samir Soares Melo
+Esse documento aí para gente porque? Talvez vocês tenham mandado, mas a mensagem não chegou para mim não, tá? Oi sinford desmanche.
+Emanuel Victor
+Para mim também Lá só tem um documento que é a atividade que vocês receberam. o trabalho
+Joao Vinicius Gonzaga Ruas
+Emanuel Victor
+Manda um link do de uma pasta no Drive só rapidão mesmo que a gente baixa.
+Joao Vinicius Gonzaga Ruas
+Pode ser também.
+Samir Soares Melo
+Aqui para mim foi.
+Joao Vinicius Gonzaga Ruas
+foi
+Samir Soares Melo
+o dia 22 páginas
+Joao Vinicius Gonzaga Ruas
+Não. Aí essa essa parte aqui foi um tópico que o professor falou que é rpor
+Emanuel Victor
+Pode continuar.
+Joao Vinicius Gonzaga Ruas
+recovery Point Object recovery objetivo de ponte de recuperação. E se a gente colocou porque tava naquele documento que eu mandei que é o que o professor pediu. Aí quem vai ter o mesmo exemplo que eu dei do banco falhar as três e 37 e o é nós definimos como meta recuperar os dados de até cinco minutos antes de ter a perca Total. Ou seja é 3:32 da tarde aí para atingir essa meta tem as estratégias que eu falei de preservar os logos do banco de dados tem a replicação continua na nuvem que a questão de se caso tudo falhado do local a nuvem tá pronta para substituir.
+e Essa parte aqui esse parágrafo a repetição assim não pode apresentar atrás não garanto sozinha porque 5 minutos dimensões de respiração seja a gente quer cinco minutos, mas não é certeza que talvez dê certo. Deve ter alguma estratégia para conseguir. Igual se o banco pagasse 4 horas, eu queria perder no máximo cinco minutos os dados o objetivo de tempo e de recuperação que aí nós colocamos recuperar todo o sistema se caso o sistema der ruim em uma hora do rp. Mas a questão é essa igual.
+O sistema local tá cheio das redundâncias que a gente colocou. E ainda tem a nuvem de contingência aí acaba que não sei. Em que casos poderia acabar caindo o sistema por exemplo, vocês tivessem muito acesso que poderia acontecer aí uma falha grave aí tem a parte você fala o teu os monitoramento de incêndio. Não sei se entra aqui, mas aqui tá mais detecção do incidente é que se a nuvem ficou essa nuvem está igual o banco local, por exemplo também ativação da RP na nuvem ferramentas acesso é uma validação aí que é mais essas metas que o professor pediu de rpor. Deixa eu ver o que é mais.
+Emanuel Victor
+pode
+Joao Vinicius Gonzaga Ruas
+Pode falar, pode falar.
+Wesley lafeta
+É complementando né? Que já falaram que como você mesmo tinha falado, né do enfim caso de incêndio, até mais essas métricas que a gente colocou seria até onde seria aceitável, né? Por exemplo num RP seria até onde. aceitável até perda, né de dos dados e transações, mas não tem como saber se essa seria a métrica aceitável em qualquer tipo de ocorrência, então a gente colocou pensando mais numa meta geral, então não sei se é certo ou errado, né?
+Emanuel Victor
+Não isso aí não precisa se preocupar não todas essas coisas eu e minha equipe a gente vai avaliar vai fazer um documento paralelo e depois em outro dia a gente marca para apresentar para vocês só para vocês. trabalho sexta-feira já entendeu? Não não vou pedir para vocês alterar nada. É só uma questão de vocês aprenderem mesmo.
+Joao Vinicius Gonzaga Ruas
+Aí a parte você fala igual monitoramento ambiental tava aqui, ó, só que essa parte eu não fiz aí acabou como tem tempo. Acabei esquecendo, mas aí vai ter a questão de biometria e acesse por exemplo, não é todo mundo da empresa que tem a permissão, né monitoramento ambiental temperatura umidade de presença por causa da questão de por exemplo os datacentes estarem dentro da empresa necessário ter todo esse cuidado.
+Segurança lógica questão de multifador de menor privilégio que a questão eu acho de a pessoa só tem acesso é realmente aquilo que ela precisa. é que só falando que é porque é importante essas coisas aí essa parte já não sei se foi o Wesley, se ele quiser falar um pouco também, não sei aqui é meio que integrar o RP combinar por causa que o Brian é consumir os dados do rp aí até no desenho tem a camada analítica do
+Emanuel Victor
+essa questão de RP Eba tipo urp sozinho, ele já não tem uma apresentação desse tipo de coisa ou Já era assim na empresa ou vocês que estão introduzindo biai?
+Joao Vinicius Gonzaga Ruas
+Na empresa não foi a gente colocou não na empresa no problema já falou aqui. Quer ver de Ter a perca no RP aí falando indicadores do indispo desatualizados, o que prejudica a tomada decisão durante a crise aí quando também seus principais
+Emanuel Victor
+pode
+Joao Vinicius Gonzaga Ruas
+sistemas são RP biai infraestrutura servidores hospedados e o único data center próprio. Aí essa questão já tinha. Aí essa parte aqui deixa eu ver aqui já foi meio falado da cama da analítica de ter o banco de consulta com dados do ae eu não sei se é interessante. Talvez colocar um dado errado por causa desse aí tem a questão da lgpd que Luiz pediu para colocar também.
+do coleta dos dados Acho que essa parte é mais depois que vocês podem olhar que acho que é muita até hoje assim mas
+Emanuel Victor
+Vocês chegam a determinar. Que tipo de dado é sensível é público ou alguma coisa assim? Tipo só definindo assim esse tipo de dado é um dado sensível, então ele precisa ficar mais tempo armazenado.
+Joao Vinicius Gonzaga Ruas
+Informações pessoais comerciais sensíveis deverão ter classificação de segurança adequada os dados serumantes em ambientes protegidos por controle de acesso, dedicação fotografia com monitoramento e Rogério.
+Emanuel Victor
+Mas assim separar eles em categorias e falar essa categoria demora tanto tempo de backup. Essa aqui já pode quanto tempo o backup fica armazenado para cada
+Joao Vinicius Gonzaga Ruas
+Não isso não foi abordado não.
+Emanuel Victor
+categoria.
+Joao Vinicius Gonzaga Ruas
+Não isso não foi abordado não.
+Wesley lafeta
+Estabeleceu. Qual é mais os dados importantes, você é colocar a divisão só para os dados importantes no
+Emanuel Victor
+Nós somos uma coisa que a gente viu nessa matéria com Luiz agora que os dados
+Joao Vinicius Gonzaga Ruas
+É então não tem eu não tenho ideia sobre isso também.
+José Vitor
+por
+Emanuel Victor
+eles têm categorias e cada categoria, né? Dependendo da importância ou do pão secreto. Ele é ele permanece por mais tempo em backup, vai ter tipo de
+Joao Vinicius Gonzaga Ruas
+certo
+Emanuel Victor
+dado que assim que Deu três meses a gente apaga o backup e já tá salvando o outro ali no lugar, mas tem dados que a gente tem que manter o backup por até cinco anos, entendeu?
+Joao Vinicius Gonzaga Ruas
+certo
+Emanuel Victor
+Mas é só para vocês terem entendimento aí não tô falando que
+Joao Vinicius Gonzaga Ruas
+certo beleza Aí aqui entra na parte criptografia, essa parte também é igual esse algoritmo AES 250g até perguntei para Luiz se eu poderia colocar isso, porque igual isso eu não tinha conhecimento nenhum foi mais ai pesquisa esse mês no site por causa que a gente não aprendeu sobre isso. Acho que não foi nem falar nas aulas sobre essa parte de segurança. Aí falou que poderia colocar é só entender um pouco assim sobre e essa parte mais segurança seria um pouco falado na consultoria também desse algoritmo é desse a é 256 que ele falou que é bem famoso no mercado.
+Aí aqui tá uma descrição de como ele funciona aí que tem aplicação da cartografia.
+Emanuel Victor
+Isso aí eu vou essa questão dos algoritmos certinho, a gente vai explicar mas
+Joao Vinicius Gonzaga Ruas
+Essa questão.
+Emanuel Victor
+deixa para outra reunião porque esse tipo mas a gente precisa de uma
+Joao Vinicius Gonzaga Ruas
+beleza
+Emanuel Victor
+apresentação mais certinho.
+Joao Vinicius Gonzaga Ruas
+Tranquilo essa questão de tamanho igual do dado criptografado ficar bem maior e tudo a gente também não abordou e onde igual o meu local para guardar esses dados. Não sei se não dá até sem tempo na empresa aí a questão da segurança, né que a gente falou da biometria dessas coisas. Esqueci a palavra de menor acesso política de menor.
+Emanuel Victor
+menor privilégio
+Joao Vinicius Gonzaga Ruas
+Melhor privilégio isso é acabou que essa parte depois quando vocês forem aposentar, se tiver interessante acrescentar ou de conhecimento mesmo para passar mas trabalha isso eu acho aí tem os dois. os dois os dois Diagramas que a gente mandou essa primeira parte Ela Tem É operacional que é funcionar os pedidos estoque gente aí tem data sempre local tudo que contém nele tudo que a política de backup a nuvem.
+Emanuel Victor
+Quanto aos diagramas eu peço que mais para frente vocês mandem ele sem ser printado se possível o arquivo deles em si para não ter perda de qualidade
+Joao Vinicius Gonzaga Ruas
+certo
+Emanuel Victor
+quando a gente for tentar olhar e eu gostei bastante uma coisa que Luiz falou
+Joao Vinicius Gonzaga Ruas
+beleza
+Emanuel Victor
+para ele ter atenção que no caso você citaram eu achei que bem foi essa questão de auditar essa o caso da biometria. Que quem fosse ter acesso ao servidores, né? E passar por uma aplicação biométrica e vocês iam. auditar e fazer logo tudo mais e aí só um ponto é que isso aqui eu tô falando, mas eu não tô lembrando se realmente é assim funciona, mas só um ponto de atenção que talvez no caso de onde ficar armazenado especificamente os logins dessa biometria porque vamos dizer que a pessoa entrou com más intenções e ela o acesso Então se ela tem acesso ela entrou com mais intenções ali se os dados do log de quem tá entrando quem tá saindo fica lá ela pode simplesmente alterar com facilidade então idealmente isso fica armazenado separadamente eu estou
+Joao Vinicius Gonzaga Ruas
+certo
+Emanuel Victor
+pensando aqui, né? Talvez não seja esse o caso, mas é uma coisa que passou pela minha cabeça.
+Joao Vinicius Gonzaga Ruas
+Sim posso olhar essa questão depois também.
+Emanuel Victor
+Olha eu gostei bastante do Trabalho seus. Deixa eu ver aqui uma coisinha. Se vocês tiveram alguma dúvida assim. Em cima desse trabalho mesmo que vocês fizeram ou durante a apresentação alguma coisa que eu falei se tiver uma dúvida maior.
+Joao Vinicius Gonzaga Ruas
+Não a questão das dúvidas. Foi o que eu falei, mas da parte de segurança não tem um conhecimento muito sobre isso de Backup também igual a passando e falou que depois vai dar de raiz também e mais essas coisas de arquitetura que a gente colocou aqui, mas os levantou é legal de ser acrescentado também e acho que basicamente a estrutura que a gente pensou foi falado.
+Emanuel Victor
+se tu
+Samir Soares Melo
+Outro ponto aí só lembrando é no trabalho seus que eu não sei se eu vi escrito só deixa confirmar mais uma vez. Ah tá, vocês citaramização né de dados. É anonimização, é porque quando a gente trabalha com dados sensíveis, né? Inclusive eu fiz isso bastante no meu estágio, quando eu trabalhava de trabalho, mas nessa cidade com desenvolvimento os nomes a gente ananimizava e deixava de de pegar algumas informações também, por exemplo se você não precisa do CPF da pessoa não tem porque armazenar o CPF então é interessante.
+Você também tem uma filtragem de quais dados você vai estar recolhendo para não possível, vazamento você não ter tanta sendo ser tão prejudicado assim pela lgpd então coisa do tipo. Mas eu vi o documento é um pouquinho extenso com razão, né? Eu vou ter que analisar depois eu cheguei me atrasado, até peço desculpas, mas depois vou analisar e a gente passa um relatório mais detalhado.
+Joao Vinicius Gonzaga Ruas
+Essa questão do documento está meio extenso, por causa que como valeu 20 pontos para a gente aí a gente acabou que a gente
+Emanuel Victor
+Não pessoal ficou muito bom o documento é para o nível de conteúdo que
+Joao Vinicius Gonzaga Ruas
+abusando de pesquisa e tudo porque
+Emanuel Victor
+vocês tiveram no curso, até agora eu achei ele muito bem detalhado para falar a verdade. Tipo assim, é claro que tem coisa que vocês no fim das contas vão só citar porque não tem cabimento de você estudar cada coisa certinho inteira para colocar ali no documento. Mas eu achei bem completo. A gente ainda vai ter que fazer essa análise toda não é uma coisa que a gente consegue falar isso aqui tá errado. Isso aqui é assim na verdade. O preço disso é inviável para aplicar então tem muita coisa que a gente não sabe também e essa questão da segurança de dados pessoal, ela é uma questão de maturidade, porque eu acho assim que até os próprios profissionais assim para estabelecer essas medidas ao longo do tempo teve tudo que passar pelos problemas para ver que coisa era possível. Eu não vi por exemplo durante o documento uma medida assim que tratasse de Algum tipo de invasão se alguém coloca um pendrive malicioso ali uma das máquinas dentro da empresa não necessariamente no servidor mas no computador numa situação de trabalho de alguém.
+Mas esse tipo de coisa assim eu entendo até porque o eu e a gente leu a questão aqui que vocês tinham mandado, né? O exercício em si, ele dá essa ideia tendenciosa da gente se preocupar com a questão da panela elétrica e com a falta de redundância das coisas. Então é lógico que a gente vai focar imediatamente em corrigir isso, só que a gente sempre tem que lembrar existem vários outros fatores e não é porque a panela elétrica que foi o problema dessa vez.
+Que só existe esse problema porque se Vocês conseguem resolver esse então próximo problema que vão aparecer certamente não vai ser esse porque esses aqui já tá bem tratado, entendeu?
+Joao Vinicius Gonzaga Ruas
+Entendi. Acho que é mais essas coisas igual que a gente não tem domínio de segurança, essa questão do pen drive mesmo, nem passou na minha cabeça outra coisa que não passa na minha cabeça. É por exemplo de VPN. Não sei da empresa ter um ambiente fechado essas coisas também não passou na minha cabeça agora se falando dessa coisa de pen drive essas coisas de acesso de da questão dos logos mesmo, eu não pensei tanto nesse lado e eu acho que foi muito disso também de focar nas redundâncias na parte mais de Na parte mais de fazer o RP não cair fazer tudo ficar funcionando, mas talvez não tá tão seguro os dados em si.
+Emanuel Victor
+Sim, é o exercício dessa questão tendenciosa para a gente e ao mesmo tempo é uma questão de maturidade, né? Onde que ia passar pela cabeça suas, né? Que não tem tantos contatos com esse tipo de conteúdo. É dentro da área de redes também tem uma coisa que é parecida com o princípio de menor privilégio. Você lembra qual que é o nome exato que é de não confiar em qualquer dispositivo? É isso aí dentro dessa área de redes existe também uma coisa que é parecida
+Samir Soares Melo
+É mas o que você falou no protocolo de da camada de computação? Tem isso mesmo.
+Emanuel Victor
+com isso, só que no caso seria não confiar em qualquer máquina só porque ela tá conectada na rede. E perfeitamente aceitável que vocês não chegaram a aceitar isso porque a gente tá vendo isso agora em comunicação de dados então. Mas existem vários fatores aí de segurança que se uma empresa ela realmente essa segura ela tem que estar gerando muito lucro, porque é muito Custoso manter todas as medidas preventivas manter medidas. coisa, ainda tem que reservar um valor para caso alguma coisa, venha ocorrer.
+Depende então é uma questão assim, conforme vocês forem fazendo curso esse tipo de maturidade vai ser desenvolvido, né? Eu achei muito legal que você chegaram a falar bastante de backup sem ver propriamente a matéria em cima de banco de dados então, vocês estão de parabéns pessoal. Eu queria ver se ela consigo marcar para vocês com vocês, na verdade uma outra
+Joao Vinicius Gonzaga Ruas
+Pode ver como é que tá tranquilo para vocês igual vai dar tempo para vocês
+Emanuel Victor
+reunião.
+Joao Vinicius Gonzaga Ruas
+organizarem tudo aí quando vocês tiverem. Tem cada material, a gente pode marcar assim, não tem problema não.
+Emanuel Victor
+Eu quero deixar então marcado para dia 11 nesse mesmo horário, se for possível. Talvez seja alterado, mas no momento deixa marcado para dia 11 semana que vem nesse mesmo horário Ok três horas no caso.
+Joao Vinicius Gonzaga Ruas
+Fechou fechou.
+Emanuel Victor
+E até lá eu acredito que já deu tempo da gente fazer a minha equipe fazer uma análise mais minuciosa em cima do documento e organizar fazer nossas apresentações para vocês mesmo, entendeu?
+Joao Vinicius Gonzaga Ruas
+beleza
+Emanuel Victor
+Muito obrigado aí para vocês e uma boa noite.
+Joao Vinicius Gonzaga Ruas
+Brigadão, boa noite, valeu.
+José Vitor
+valeu
