@@ -1,0 +1,35 @@
+﻿ID;Ação;DIR;GSI;CRI;INF;DBA;BKP;RED;SEG;ENC;JUR;RH;ERP;CTR;SUP;AUD
+AC01;"PSI enxuta e RACI aprovadas; nomeações";A;R;C;C;–;I;–;–;C;C;C;–;C;–;–
+AC02;Gatilhos de DR, árvore de contatos, procedimentos manuais;I;C;A/R;R;C;–;–;–;–;C;–;C;I;–;–
+AC03;MFA e contas administrativas separadas;I;A;–;R;C;C;C;C;–;–;–;–;–;R;–
+AC04;Cofre em conta separada, imutabilidade, WAL imutável;I;A;–;C;C;R;C;C;–;–;–;–;–;–;–
+AC05;Bloqueio de USB e macros;–;A;–;R;–;–;–;I;–;–;–;–;–;R;–
+AC06;Custódia offline das chaves (dupla custódia);A;R;–;I;–;C;–;I;–;–;–;–;R;–;–
+AC07;Escopo completo do backup;–;C;–;A;R;R;C;I;–;–;–;C;–;–;–
+AC08;Revisão da proposta e inconsistências;A;R;C;C;C;–;–;–;–;–;–;C;–;–;–
+AC09;Alertas de replicação e arquivamento de WAL;–;A;–;C;R;C;–;C;–;–;–;–;–;–;–
+AC10;Exercício de mesa (perda do DC e ransomware);I;R;A/R;R;C;C;–;–;C;C;–;C;–;–;–
+AC11;Inventário de ativos e gestão de mudanças;–;C;–;A/R;C;–;C;C;–;–;–;R;C;R;–
+AC12;BIA e validação de RPO/RTO;A;C;R;C;C;–;–;–;–;–;–;R;R;–;–
+AC13;Segmentação de rede e negar por padrão;–;C;–;A;C;–;R;C;–;–;–;C;–;–;–
+AC14;EDR e gestão de vulnerabilidades;–;A;–;R;–;–;–;R;–;–;–;C;–;R;–
+AC15;Coletor de logs, cópia imutável, alertas;–;A;–;C;C;C;C;R;–;–;–;–;–;–;–
+AC16;Gestão de identidades e revisão de acessos;–;A;–;R;C;–;–;C;C;–;R;R;C;–;–
+AC17;Plano de resposta a incidentes e playbook de ransomware;I;A;C;C;C;C;–;R;R;R;–;–;–;–;–
+AC18;LGPD: mapa de dados, base legal, temporalidade, classificação;I;R;–;–;–;C;–;–;A/R;R;C;C;C;–;–
+AC19;Conscientização, phishing, SPF/DKIM/DMARC;I;A;–;R;–;–;–;R;–;–;R;–;–;–;–
+AC20;Planos de backup por sistema e testes;–;A;C;C;R;R;–;–;C;C;–;–;C;–;–
+AC21;Governança de nuvem e fornecedores;A;R;–;R;–;C;–;C;C;R;–;–;C;–;–
+AC22;Réplica local do banco com failover e fencing;C;C;C;A;R;–;–;–;–;–;–;–;C;–;–
+AC23;Teste completo de failover e failback;I;C;A;R;R;R;R;C;–;–;–;R;C;–;–
+AC24;Segurança física e energia;I;C;–;A/R;–;–;–;R;C;C;C;–;–;–;–
+AC25;BI: réplica, pseudonimização, reconciliação;–;C;–;–;R;–;–;C;C;–;–;A/R;C;–;–
+AC26;Auditoria no banco e acesso privilegiado;–;A;–;C;R;I;–;C;–;–;–;–;–;–;–
+AC27;ERP e integrações: MFA, trilha, cofre de segredos;–;A;–;C;C;–;–;C;–;–;–;R;C;–;–
+AC28;Hardening de estações e dispositivos;–;C;–;A;–;–;–;C;–;–;I;–;–;R;–
+AC29;NF-e e integrações no DR;–;C;C;R;–;–;–;–;–;C;–;R;A;–;–
+AC30;SGSI baseado na ISO/IEC 27001;A;R;C;C;C;–;–;R;C;C;–;–;C;–;–
+AC31;Auditoria, teste de invasão e revisão anual;A;C;–;C;C;–;–;C;–;–;–;–;C;–;R
+AC32;Evolução para Zero Trust;I;A;–;C;–;–;R;R;–;–;–;C;–;–;–
+AC33;Painel de indicadores;I;A;C;C;C;C;–;R;–;–;–;–;–;–;–
+AC34;SOC/MDR terceirizado (se justificado);A;R;–;C;–;–;–;C;–;C;–;–;C;–;–

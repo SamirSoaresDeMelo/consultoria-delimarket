@@ -1,0 +1,19 @@
+﻿ID;Risco;Origem;Probabilidade (1-5);Impacto (1-5);Nível hoje;O que fazer;Nível depois
+R01;Ransomware (pendrive/phishing);Intencional;4;5;Crítico;Antivírus/EDR, rede segmentada, treinar usuários;Médio
+R02;Roubo de senha de administrador;Intencional;3;5;Alto;MFA forte, separar contas de admin, cofre de senhas;Médio
+R03;Backup não restaura;Acidental;2;5;Alto;Testar restauração com responsável e evidência;Médio
+R04;Falha do banco de dados;Acidental;3;4;Alto;Banco em alta disponibilidade;Baixo
+R05;Falta de energia e gerador único;Ambiental;2;4;Médio;"Diretoria aceita o risco; testar gerador";Baixo
+R06;Não cumprir RTO de 1 h;Acidental;4;4;Alto;"Definir quem decide o failover; testar o plano";Médio
+R07;Dado corrompido replicado;Acidental;3;4;Alto;"Réplica com atraso; testar PITR";Médio
+R08;Apagar ou alterar logs;Intencional;3;4;Alto;Logs centralizados e protegidos;Baixo
+R09;Fraude ou abuso interno;Intencional;3;4;Alto;"Separar funções; revisar acessos";Médio
+R10;Vazamento de dados;Intencional;3;4;Alto;"Controlar exportações e nuvem; criptografar";Médio
+R11;Descumprir a LGPD;Acidental;4;3;Alto;"Nomear encarregado; definir retenção e prazo de aviso";Baixo
+R12;Perder as chaves de criptografia;Acidental;2;5;Alto;Custódia dupla e cópia das chaves;Médio
+R13;BI com dado desatualizado;Acidental;3;3;Médio;Monitorar atraso do BI;Baixo
+R14;Falha do fornecedor;Acidental;3;3;Médio;Contrato com SLA;Baixo
+R15;Configuração errada do DR;Acidental;3;4;Alto;Revisar e testar o DR;Médio
+R16;Acesso físico indevido ou incêndio;Intencional;2;4;Médio;Controle de acesso e cópia fora do prédio;Baixo
+R17;Incidente sem plano de resposta;Acidental;4;4;Alto;Escrever e treinar plano de resposta;Médio
+R18;Falha de segurança não corrigida;Intencional;3;4;Alto;Aplicar correções com prazo;Médio
