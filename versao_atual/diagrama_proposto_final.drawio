@@ -1,0 +1,495 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="deli-pcn-revisado">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="titulo" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;" value="DeliMarket – Arquitetura híbrida do PCN (diagrama revisado + correções da auditoria)">
+          <mxGeometry x="110" y="-125" width="700" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="legenda" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;fillColor=none;strokeColor=#000000;fontSize=12;" value="">
+          <mxGeometry x="110" y="-85" width="790" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lg_add" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" value="">
+          <mxGeometry x="125" y="-72" width="30" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lg_add_t" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;" value="Adicionado">
+          <mxGeometry x="160" y="-75" width="110" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="lg_chg" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=10;" value="">
+          <mxGeometry x="280" y="-72" width="30" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lg_chg_t" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;" value="Alterado">
+          <mxGeometry x="315" y="-75" width="110" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="lg_keep" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=10;" value="">
+          <mxGeometry x="420" y="-72" width="30" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lg_keep_t" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;" value="Mantido do original">
+          <mxGeometry x="455" y="-75" width="170" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="operacao" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;fillColor=none;strokeColor=#000000;fontSize=12;" value="Operação">
+          <mxGeometry x="-100" y="85" width="160" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="op_in" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=10;" value="Funcionários / pedidos / estoque / Logística">
+          <mxGeometry x="-80" y="125" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dc" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;fillColor=none;strokeColor=#000000;fontSize=12;" value="Data center local">
+          <mxGeometry x="110" y="40" width="900" height="860" as="geometry" />
+        </mxCell>
+        <mxCell id="internet" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=10;" value="Internet A e B (operadoras e rotas independentes)">
+          <mxGeometry x="130" y="118" width="130" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="zona" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;fillColor=none;strokeColor=#82b366;strokeWidth=2;dashed=1;fontSize=10;" value="Equipamentos críticos com alimentação protegida (UPS N+1 · gerador · ATS · fontes duplas em circuitos A/B)">
+          <mxGeometry x="300" y="85" width="695" height="575" as="geometry" />
+        </mxCell>
+        <mxCell id="rot" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" value="Roteadores de borda ×2 (failover automático de rota)">
+          <mxGeometry x="320" y="118" width="130" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="fw" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" value="Firewalls em alta disponibilidade (ativo-passivo)">
+          <mxGeometry x="480" y="118" width="130" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="sw" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" value="Switches redundantes">
+          <mxGeometry x="640" y="118" width="130" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="lb" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=10;" value="Balanceadores de carga (par redundante)">
+          <mxGeometry x="800" y="118" width="130" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="erp_res" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=10;" value="Servidor ERP reserva (N+1, passivo)">
+          <mxGeometry x="640" y="270" width="130" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="erp_pri" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=10;" value="Servidor ERP principal (N+1, ativo)">
+          <mxGeometry x="800" y="270" width="130" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="db" parent="1" vertex="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=10;" value="Banco transacional principal (instância primária) – Cópia 1">
+          <mxGeometry x="720" y="420" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="db_rep" parent="1" vertex="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" value="Réplica local do banco (síncrona)">
+          <mxGeometry x="480" y="420" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="raid" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" value="Armazenamento RAID">
+          <mxGeometry x="720" y="560" width="130" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="rede" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" value="Rede elétrica (concessionária)">
+          <mxGeometry x="130" y="700" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ger" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" value="Gerador (partida automática)">
+          <mxGeometry x="130" y="790" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ats" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" value="ATS – transferência automática">
+          <mxGeometry x="310" y="745" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ups" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;" value="UPS em N+1 (módulos redundantes) com desligamento ordenado dos servidores">
+          <mxGeometry x="480" y="735" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dist" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" value="Distribuição elétrica redundante: circuitos independentes A/B e fontes duplas">
+          <mxGeometry x="690" y="735" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="bk" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;fillColor=none;strokeColor=#000000;fontSize=12;" value="Backup 3-2-1">
+          <mxGeometry x="1190" y="40" width="560" height="335" as="geometry" />
+        </mxCell>
+        <mxCell id="bk_job" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=10;" value="Full semanal (dom 2h) + incremental diário (seg–sáb 2h)">
+          <mxGeometry x="1210" y="85" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="bk_wal" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" value="Arquivo de WAL em armazenamento separado (~1 min)">
+          <mxGeometry x="1210" y="170" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bk_adm" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" value="Arquivos administrativos (RPO 24 h / RTO 8 h)">
+          <mxGeometry x="1210" y="245" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bk_c2" parent="1" vertex="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=10;" value="Cópia 2 - servidor de backup local dedicado (acesso independente)">
+          <mxGeometry x="1415" y="150" width="130" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="bk_bi" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" value="Backup diário do BI (30 dias)">
+          <mxGeometry x="1415" y="280" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bk_c3" parent="1" vertex="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=9;" value="Cópia 3 - nuvem imutável, conta separada. Full + incrementais travados (full com lock de 97 dias)">
+          <mxGeometry x="1595" y="75" width="140" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="bk_tape" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=10;" value="Fita offline semanal, criptografada, em local físico separado (12 semanas)">
+          <mxGeometry x="1600" y="155" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="bk_mes" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" value="Cópia de arquivamento mensal (12 meses)">
+          <mxGeometry x="1600" y="255" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="an" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;fillColor=none;strokeColor=#000000;fontSize=12;" value="Camada analítica">
+          <mxGeometry x="1190" y="405" width="560" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="an_dash" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=10;" value="Dashboards BI (exibem horário da última atualização)">
+          <mxGeometry x="1405" y="455" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="an_db" parent="1" vertex="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#ffffff;strokeColor=#000000;fontSize=10;" value="Banco analítico de consultas">
+          <mxGeometry x="1600" y="455" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="an_cdc" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" value="CDC – captura de alterações do ERP">
+          <mxGeometry x="1210" y="545" width="130" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="an_raw" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" value="Área de dados brutos">
+          <mxGeometry x="1405" y="545" width="130" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="an_etl" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=10;" value="ETL/ELT: transformação e validação (reprocessamento, deduplicação)">
+          <mxGeometry x="1600" y="545" width="130" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="nv" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;fillColor=none;strokeColor=#6c8ebf;strokeWidth=2;fontSize=12;" value="Nuvem contingência (warm standby)">
+          <mxGeometry x="1190" y="655" width="560" height="265" as="geometry" />
+        </mxCell>
+        <mxCell id="nv_rep" parent="1" vertex="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#ffffff;strokeColor=#000000;fontSize=10;" value="Réplica do banco">
+          <mxGeometry x="1205" y="700" width="140" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="nv_erp" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=10;" value="ERP de contingência">
+          <mxGeometry x="1400" y="700" width="140" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="nv_mon" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=9;" value="Monitoramento contínuo FORA do data center: detecta indisponibilidade, latência, perda de pacotes e atraso de replicação/WAL">
+          <mxGeometry x="1205" y="810" width="140" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="nv_proc" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=8;" value="Failover / Failback: isolar o primário antigo (fencing), promover réplica, ativar ERP, redirecionar e validar. Failback: sincronizar e validar antes de voltar">
+          <mxGeometry x="1400" y="810" width="140" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="nv_dns" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=9;" value="DNS / balanceador de contingência (redireciona usuários e integrações)">
+          <mxGeometry x="1595" y="810" width="140" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="seg" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;fillColor=none;strokeColor=#000000;fontSize=12;" value="Segurança física e lógica">
+          <mxGeometry x="-80" y="1000" width="610" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="s_rfid" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=10;" value="Controle de acesso RFID / biometria">
+          <mxGeometry x="-60" y="1060" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s_mfa" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;" value="MFA forte (administradores e nuvem)">
+          <mxGeometry x="90" y="1060" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s_aes" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=10;" value="Criptografia AES-256 em backups">
+          <mxGeometry x="240" y="1060" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s_sens" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=10;" value="Sensores: temperatura, umidade, fumaça, vazamento de água e equip. elétricos">
+          <mxGeometry x="-60" y="1155" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s_priv" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=10;" value="Menor privilégio e segmentação de rede">
+          <mxGeometry x="90" y="1155" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s_tls" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=10;" value="TLS nas comunicações">
+          <mxGeometry x="240" y="1155" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s_inc" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=10;" value="Detecção e combate a incêndio">
+          <mxGeometry x="-60" y="1250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s_mon" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=10;" value="Monitoramento e auditoria">
+          <mxGeometry x="90" y="1250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s_kms" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;" value="Chaves em KMS: custódia dupla e cópia de segurança">
+          <mxGeometry x="240" y="1250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s_rest" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" value="Criptografia em repouso (bancos e armazenamento)">
+          <mxGeometry x="390" y="1250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gov" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;fillColor=none;strokeColor=#82b366;strokeWidth=2;dashed=1;fontSize=11;" value="Governança do ciclo de vida dos dados e conformidade">
+          <mxGeometry x="560" y="1000" width="450" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="g_col" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" value="Coleta (somente dados necessários)">
+          <mxGeometry x="575" y="1045" width="120" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="g_uso" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" value="Uso e tratamento (finalidade legítima)">
+          <mxGeometry x="720" y="1045" width="120" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="g_arm" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" value="Armazenamento (acesso, criptografia, classificação)">
+          <mxGeometry x="865" y="1045" width="120" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="g_arq" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" value="Arquivamento e retenção (tabela de temporalidade)">
+          <mxGeometry x="865" y="1125" width="120" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="g_des" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" value="Descarte seguro / anonimização">
+          <mxGeometry x="720" y="1125" width="120" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="g_lgpd" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" value="LGPD (Lei 13.709/2018)">
+          <mxGeometry x="575" y="1215" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="g_iso" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" value="ISO/IEC 27001:2022 (SGSI)">
+          <mxGeometry x="720" y="1215" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="g_nist" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" value="NIST: contingência e recuperação">
+          <mxGeometry x="865" y="1215" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mt" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;fillColor=none;strokeColor=#82b366;strokeWidth=2;dashed=1;fontSize=11;" value="Metas de recuperação e testes">
+          <mxGeometry x="1040" y="1000" width="570" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="m_erp" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" value="ERP: RPO 5 min / RTO 1 h">
+          <mxGeometry x="1050" y="1045" width="125" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m_log" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" value="Logística: RPO 5 min / RTO 1 h">
+          <mxGeometry x="1190" y="1045" width="125" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m_bi" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" value="BI: RPO 1 h / RTO 4 h">
+          <mxGeometry x="1330" y="1045" width="125" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m_adm" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" value="Arquivos adm.: RPO 24 h / RTO 8 h">
+          <mxGeometry x="1470" y="1045" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m_t1" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" value="Teste de restauração mensal (inclui descriptografia)">
+          <mxGeometry x="1050" y="1125" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m_t2" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" value="Teste de recuperação dos serviços críticos trimestral">
+          <mxGeometry x="1235" y="1125" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m_t3" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" value="Teste de failover trimestral (RTO)">
+          <mxGeometry x="1420" y="1125" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m_ind" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;" value="Indicadores acompanhados: atraso de replicação, último WAL preservado, disponibilidade da contingência, tempo de ativação do ERP na nuvem e tempo total de recuperação">
+          <mxGeometry x="1050" y="1205" width="540" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" edge="1" parent="1" source="operacao" target="internet" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="internet" target="rot" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#82b366;strokeWidth=2;" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="rot" target="fw" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#82b366;strokeWidth=2;" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="fw" target="sw" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#82b366;strokeWidth=2;" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="sw" target="lb" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#82b366;strokeWidth=2;" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="lb" target="erp_pri" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#000000;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="lb" target="erp_res" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#000000;exitX=0.15;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" value="Falha principal">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="erp_pri" target="db" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="erp_res" target="db" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="db" target="db_rep" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#82b366;strokeWidth=2;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" value="Replicação síncrona">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="db" target="raid" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#82b366;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="rede" target="ats" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#82b366;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.3;entryDx=0;entryDy=0;" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="ger" target="ats" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#82b366;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.7;entryDx=0;entryDy=0;" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="ats" target="ups" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#82b366;strokeWidth=2;" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="ups" target="dist" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#82b366;strokeWidth=2;" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="dist" target="zona" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;" value="proteção elétrica">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" source="db" target="bk_job" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#000000;exitX=1;exitY=0.22;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1030" y="437" />
+              <mxPoint x="1030" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e17" edge="1" parent="1" source="db" target="bk_wal" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#82b366;strokeWidth=2;exitX=1;exitY=0.36;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="WAL">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1060" y="449" />
+              <mxPoint x="1060" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e18" edge="1" parent="1" source="db" target="nv_rep" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=2;exitX=1;exitY=0.78;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" value="Replicação assíncrona + WAL via VPN ⇄ failback">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1090" y="482" />
+              <mxPoint x="1090" y="732" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e19" edge="1" parent="1" source="db" target="an_cdc" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#82b366;strokeWidth=2;exitX=1;exitY=0.64;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="CDC">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1120" y="471" />
+              <mxPoint x="1120" y="577" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e20" edge="1" parent="1" source="bk_job" target="bk_c2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.2;entryDx=0;entryDy=0;" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e21" edge="1" parent="1" source="bk_wal" target="bk_c2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#82b366;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e22" edge="1" parent="1" source="bk_adm" target="bk_c2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#82b366;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.9;entryDx=0;entryDy=0;" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e23" edge="1" parent="1" source="bk_bi" target="bk_c2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#82b366;strokeWidth=2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e24" edge="1" parent="1" source="bk_c2" target="bk_c3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#82b366;strokeWidth=2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="envia à nuvem (TLS)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e25" edge="1" parent="1" source="bk_c2" target="bk_tape" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e26" edge="1" parent="1" source="bk_c2" target="bk_mes" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#82b366;strokeWidth=2;exitX=1;exitY=0.85;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e27" edge="1" parent="1" source="an_cdc" target="an_raw" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#82b366;strokeWidth=2;" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e28" edge="1" parent="1" source="an_raw" target="an_etl" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#82b366;strokeWidth=2;" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e29" edge="1" parent="1" source="an_etl" target="an_db" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#000000;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e30" edge="1" parent="1" source="an_db" target="an_dash" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#000000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e31" edge="1" parent="1" source="an_db" target="bk_bi" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#82b366;strokeWidth=2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" value="backup diário do BI">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1665" y="390" />
+              <mxPoint x="1480" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e32" edge="1" parent="1" source="nv_rep" target="an_cdc" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#82b366;strokeWidth=2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;" value="Em contingência: nova fonte da integração">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e33" edge="1" parent="1" source="nv_rep" target="nv_erp" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e34" edge="1" parent="1" source="nv_mon" target="dc" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#82b366;strokeWidth=2;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.944;entryDx=0;entryDy=0;dashed=1;" value="monitora o data center">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e35" edge="1" parent="1" source="nv_mon" target="nv_proc" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#82b366;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="1. detecta">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e36" edge="1" parent="1" source="nv_proc" target="nv_rep" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#82b366;strokeWidth=2;exitX=0.15;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" value="3. promove">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1421" y="787" />
+              <mxPoint x="1275" y="787" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e37" edge="1" parent="1" source="nv_proc" target="nv_erp" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#82b366;strokeWidth=2;exitX=0.7;exitY=0;exitDx=0;exitDy=0;entryX=0.7;entryY=1;entryDx=0;entryDy=0;" value="4. ativa">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e38" edge="1" parent="1" source="nv_proc" target="nv_dns" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#82b366;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="5. redireciona">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e39" edge="1" parent="1" source="nv_dns" target="operacao" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#82b366;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;" value="acesso dos usuários ao ERP da nuvem">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1665" y="960" />
+              <mxPoint x="-20" y="960" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e40" edge="1" parent="1" source="s_rfid" target="s_sens" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e41" edge="1" parent="1" source="s_sens" target="s_inc" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e42" edge="1" parent="1" source="s_mfa" target="s_priv" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e43" edge="1" parent="1" source="s_priv" target="s_mon" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e44" edge="1" parent="1" source="s_aes" target="s_tls" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e45" edge="1" parent="1" source="s_tls" target="s_kms" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e46" edge="1" parent="1" source="s_kms" target="s_rest" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#82b366;strokeWidth=2;" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e47" edge="1" parent="1" source="g_col" target="g_uso" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#82b366;strokeWidth=2;" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e48" edge="1" parent="1" source="g_uso" target="g_arm" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#82b366;strokeWidth=2;" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e49" edge="1" parent="1" source="g_arm" target="g_arq" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#82b366;strokeWidth=2;" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e50" edge="1" parent="1" source="g_arq" target="g_des" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;labelBackgroundColor=#ffffff;strokeColor=#82b366;strokeWidth=2;" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lg_new" parent="1" vertex="1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=10;">
+          <mxGeometry x="640" y="-72" width="30" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lg_new_t" parent="1" vertex="1" value="Correção da auditoria" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;">
+          <mxGeometry x="675" y="-75" width="200" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="n_seg" parent="1" vertex="1" value="Rede em zonas (VLANs): usuários · ERP · banco · backup, com firewall entre elas" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=10;">
+          <mxGeometry x="320" y="205" width="130" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="n_edr" parent="1" vertex="1" value="EDR/antivírus em servidores e estações; bloqueio de pendrive" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=10;">
+          <mxGeometry x="320" y="300" width="130" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="n_pam" parent="1" vertex="1" value="Cofre de senhas e contas de administrador separadas (produção ≠ backup)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=10;">
+          <mxGeometry x="320" y="395" width="130" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="n_pat" parent="1" vertex="1" value="Cluster do banco (Patroni): failover local com fencing" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=10;">
+          <mxGeometry x="480" y="300" width="130" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="n_siem" parent="1" vertex="1" value="Central de logs (SIEM) em área protegida, com cópia imutável" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=10;">
+          <mxGeometry x="480" y="540" width="130" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="n_vpn" parent="1" vertex="1" value="VPN site-to-site com 2 túneis IPsec para a nuvem" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=10;">
+          <mxGeometry x="320" y="540" width="130" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="n_mov" parent="1" vertex="1" value="Ponto p/ gerador móvel + contrato de combustível. Gerador único: risco aceito formalmente pela diretoria" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=9;">
+          <mxGeometry x="310" y="830" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n_carga" parent="1" vertex="1" value="Teste do gerador sob carga (periódico)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=10;">
+          <mxGeometry x="520" y="830" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n_atr" parent="1" vertex="1" value="Réplica com atraso (1 a 4 h): protege de erro replicado" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=9;">
+          <mxGeometry x="1560" y="695" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="n_id" parent="1" vertex="1" value="Identidade, DNS e certificados também na nuvem" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=9;">
+          <mxGeometry x="1560" y="750" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="n_ir" parent="1" vertex="1" value="Plano de resposta a incidentes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=10;">
+          <mxGeometry x="-60" y="1345" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n_raci" parent="1" vertex="1" value="Papéis definidos (RACI)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=10;">
+          <mxGeometry x="90" y="1345" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n_trn" parent="1" vertex="1" value="Treinamento: phishing e pendrive" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=10;">
+          <mxGeometry x="240" y="1345" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n_rev" parent="1" vertex="1" value="Revisão periódica de acessos" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=10;">
+          <mxGeometry x="390" y="1345" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n_dpo" parent="1" vertex="1" value="Encarregado de dados (DPO) nomeado" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=10;">
+          <mxGeometry x="575" y="1295" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n_sla" parent="1" vertex="1" value="Contrato da nuvem: SLA e plano de saída" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=10;">
+          <mxGeometry x="720" y="1295" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n_ret" parent="1" vertex="1" value="Retenção do backup x pedido de eliminação (LGPD)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=9;">
+          <mxGeometry x="865" y="1295" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n_rto" parent="1" vertex="1" value="RTO de 1 h = 7 etapas (5+15+5+5+10+10+10 min)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=10;">
+          <mxGeometry x="1050" y="1285" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n_dec" parent="1" vertex="1" value="Decisor e suplente 24x7 + critério para acionar o DR" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=10;">
+          <mxGeometry x="1235" y="1285" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n_trest" parent="1" vertex="1" value="Teste de restauração dentro da nuvem (a partir do cofre)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=10;">
+          <mxGeometry x="1420" y="1285" width="170" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
