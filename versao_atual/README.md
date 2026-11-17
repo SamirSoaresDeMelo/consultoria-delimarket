@@ -4,7 +4,8 @@ Atividade "Jogo de Negócios – Consultoria em Segurança da Informação" (Seg
 
 ## Comece por aqui
 - `12_apresentacao_diagrama.pptx` (e `.pdf`): apresentação de 16 slides.
-- `diagrama_proposto_final.drawio` (e `.png`): diagrama revisado; laranja = correção da auditoria.
+- `diagrama_simples_extensao.drawio` (e `.png`): diagrama original da DeliMarket (branco) estendido com os nossos pontos (laranja).
+- `diagrama_proposto_final.drawio` (e `.png`): versão detalhada do diagrama revisado; laranja = correção da auditoria.
 - `00_LEIA-ME_sumario_executivo.md`: resumo do trabalho.
 
 ## Entregáveis

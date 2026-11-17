@@ -429,8 +429,8 @@
         <mxCell id="lg_new_t" parent="1" vertex="1" value="Correção da auditoria" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;">
           <mxGeometry x="675" y="-75" width="200" height="28" as="geometry" />
         </mxCell>
-        <mxCell id="n_seg" parent="1" vertex="1" value="Rede em zonas (VLANs): usuários · ERP · banco · backup, com firewall entre elas" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=10;">
-          <mxGeometry x="320" y="205" width="130" height="75" as="geometry" />
+        <mxCell id="n_seg" parent="1" vertex="1" value="Rede em VLANs definidas por nós (a proposta só cita segmentação): usuários · ERP · banco · backup · gestão, com firewall entre elas" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=10;">
+          <mxGeometry x="320" y="205" width="130" height="85" as="geometry" />
         </mxCell>
         <mxCell id="n_edr" parent="1" vertex="1" value="EDR/antivírus em servidores e estações; bloqueio de pendrive" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=10;">
           <mxGeometry x="320" y="300" width="130" height="75" as="geometry" />
@@ -459,7 +459,7 @@
         <mxCell id="n_id" parent="1" vertex="1" value="Identidade, DNS e certificados também na nuvem" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=9;">
           <mxGeometry x="1560" y="750" width="180" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="n_ir" parent="1" vertex="1" value="Plano de resposta a incidentes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=10;">
+        <mxCell id="n_ir" parent="1" vertex="1" value="Plano de resposta a incidentes + playbook" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=10;">
           <mxGeometry x="-60" y="1345" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="n_raci" parent="1" vertex="1" value="Papéis definidos (RACI)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=10;">
